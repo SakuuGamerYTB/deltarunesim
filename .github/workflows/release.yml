@@ -11,12 +11,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - os: windows-2022
+            target: windows-x64
           - os: macos-15
             target: macos-arm64
           - os: macos-15-intel
             target: macos-x64
-          - os: windows-2022
-            target: windows-x64
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -50,4 +50,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ github.ref_name }}
         run: |
-          gh release create "$RELEASE_TAG" dist/* --verify-tag --title "DELTARUNE Simulator offline $RELEASE_TAG" --notes-file RELEASE-NOTES.md
+          gh release create "$RELEASE_TAG" dist/* --verify-tag --title "DELTARUNE Simulator offline $RELEASE_TAG" --notes-file packaging/release-notes.txt

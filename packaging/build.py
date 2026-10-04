@@ -1,4 +1,4 @@
-"""Construire une archive autonome sur le système cible."""
+"""Build a standalone archive on the target platform."""
 import argparse
 import hashlib
 import json
@@ -17,7 +17,7 @@ def main():
     args = parser.parse_args()
     expected = {'macos-arm64': ('Darwin', 'arm64'), 'macos-x64': ('Darwin', 'x86_64'), 'windows-x64': ('Windows', 'AMD64')}
     if (platform.system(), platform.machine()) != expected[args.target]:
-        parser.error('Construire chaque archive sur son système et son architecture cibles.')
+        parser.error('Build each archive on its target operating system and architecture.')
     build = ROOT / 'build' / args.target
     version = json.loads((ROOT / 'upstream-manifest.json').read_text(encoding='utf-8'))['version']
     name = f'deltarunesim-offline-{version}-{args.target}'
@@ -31,10 +31,10 @@ def main():
     for folder in ('site', 'readable'):
         shutil.copytree(ROOT / folder, stage / folder)
     for filename in ('upstream-manifest.json', 'readable-manifest.json', 'supplementary-manifest.json',
-                     'local-changes.json', 'verify.py', 'CREDITS.md', 'OFFLINE.md'):
+                     'local-changes.json', 'verify.py', 'README.md'):
         shutil.copy2(ROOT / filename, stage / filename)
     if platform.system() == 'Darwin':
-        launcher = stage / 'Lancer.command'
+        launcher = stage / 'Launch.command'
         launcher.write_text('#!/bin/bash\ncd -- "$(dirname -- "$0")" || exit 1\n./DeltaruneSim "$@"\n')
         launcher.chmod(0o755)
     executable = stage / ('DeltaruneSim.exe' if platform.system() == 'Windows' else 'DeltaruneSim')

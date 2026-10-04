@@ -1,4 +1,4 @@
-"""Test HTTP de l’exécutable livré, depuis un répertoire de travail différent."""
+"""Test the packaged executable over HTTP from a different working directory."""
 import hashlib
 import json
 import socket
@@ -28,7 +28,7 @@ with tempfile.TemporaryDirectory() as temp:
                         raise RuntimeError(log.read())
                     time.sleep(0.1)
             else:
-                raise RuntimeError('Le serveur autonome ne démarre pas.')
+                raise RuntimeError('The standalone server did not start.')
             assert response.status == 200
             assert b'<html' in response.read().lower()
             assert "connect-src 'self'" in response.headers['Content-Security-Policy']
@@ -44,7 +44,7 @@ with tempfile.TemporaryDirectory() as temp:
             req = urllib.request.Request(base + '/api/test', data=b'{}', method='POST')
             with urllib.request.urlopen(req) as response:
                 assert response.status == 204
-            print('PASS : démarrage autonome, HTML, JS lisible, CSP, plages HTTP, route et télémétrie locale.')
+            print('PASS: standalone startup, HTML, readable JS, CSP, HTTP ranges, routes and local telemetry.')
         finally:
             process.terminate()
             try:

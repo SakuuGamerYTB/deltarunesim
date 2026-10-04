@@ -1,4 +1,4 @@
-"""Entrée du lanceur autonome, sans dépendance sur un Python système."""
+"""Standalone launcher entry point. No system Python required."""
 import sys
 import serve
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Vérifie hors ligne les empreintes des fichiers du manifeste officiel."""
+"""Verify upstream file hashes offline."""
 from pathlib import Path
 import hashlib
 import json
@@ -14,19 +14,19 @@ for name, meta in manifest['files'].items():
         continue
     path = root / 'site' / name
     if not path.is_file():
-        errors.append(f'Absent : {name}')
+        errors.append(f'Missing: {name}')
         continue
     if name in changes['modified']:
         modified += 1
         continue
     if path.stat().st_size != meta['size'] or hashlib.sha256(path.read_bytes()).hexdigest() != meta['sha256']:
-        errors.append(f'Empreinte différente : {name}')
+        errors.append(f'Hash mismatch: {name}')
     else:
         verified += 1
-print(f'{verified} fichiers conformes au manifeste, {modified} adapté(s) pour le mode local.')
-print(f'{len(changes["omitted"])} configuration d’hébergement remplacée par le serveur local.')
+print(f'{verified} files match the manifest, {modified} adapted for offline use.')
+print(f'{len(changes["omitted"])} hosting configuration replaced by the local server.')
 if errors:
     print('\n'.join(errors))
 else:
-    print('Vérification réussie. Aucune ressource de jeu manquante dans le manifeste.')
+    print('Verification passed. No game resources from the manifest are missing.')
 sys.exit(bool(errors))

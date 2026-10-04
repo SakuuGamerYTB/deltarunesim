@@ -20,5 +20,5 @@
   ],
   "brandPresent": true,
   "bootPresent": true,
-  "limits": "DOM simulé, callbacks réseau/événements non exécutés. Le comportement en navigateur se vérifie séparément."
+  "limits": "Mock DOM; network and event callbacks are not executed. Browser behavior is tested separately."
 }

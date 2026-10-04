@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Serveur local autonome du simulateur, Python 3, sans dépendance externe."""
+"""Standalone local simulator server. Python 3, no external dependencies."""
 import argparse
 import json
 import re
@@ -110,10 +110,10 @@ class Handler(SimpleHTTPRequestHandler):
                 outputfile.write(chunk)
                 remaining -= len(chunk)
         except (BrokenPipeError, ConnectionResetError):
-            pass  # Le navigateur peut interrompre le préchargement d'une vidéo.
+            pass  # The browser may interrupt video preloading.
 
     def do_POST(self):
-        # La télémétrie est ignorée, sans conservation et sans transfert.
+        # Discard telemetry without storage or forwarding.
         if not urlsplit(self.path).path.startswith('/api/'):
             self.send_error(405)
             return
@@ -132,21 +132,21 @@ def main():
     global USE_READABLE
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port', type=int, default=8765)
-    parser.add_argument('--open', action='store_true', help='Ouvrir le navigateur')
-    parser.add_argument('--readable', action='store_true', help='Exécuter le JavaScript lisible dans readable/')
+    parser.add_argument('--open', action='store_true', help='Open the browser')
+    parser.add_argument('--readable', action='store_true', help='Run readable JavaScript from readable/')
     args = parser.parse_args()
     USE_READABLE = args.readable
     if USE_READABLE:
         missing = [p.relative_to(ROOT) for p in ROOT.rglob('*.js')
                    if not (READABLE / p.relative_to(ROOT)).is_file()]
         if missing:
-            parser.exit(1, f'Version lisible incomplète : {len(missing)} fichiers absents.\n')
+            parser.exit(1, f'Incomplete readable copy: {len(missing)} missing files.\n')
     url = f'http://127.0.0.1:{args.port}/'
     try:
         server = LocalServer(('127.0.0.1', args.port), Handler)
     except OSError as exc:
-        parser.exit(1, f'Impossible de démarrer : {exc}\nEssayez --port 8766.\n')
-    print(f'DELTARUNE local ({"lisible" if USE_READABLE else "original"}) : {url}\nAucune connexion Internet nécessaire. Ctrl+C pour arrêter.', flush=True)
+        parser.exit(1, f'Unable to start: {exc}\nTry another port with --port 8767.\n')
+    print(f'DELTARUNE Offline ({"readable" if USE_READABLE else "original"}) : {url}\nNo Internet connection required. Press Ctrl+C to stop.', flush=True)
     if args.open:
         threading.Timer(0.3, lambda: webbrowser.open(url)).start()
     try:

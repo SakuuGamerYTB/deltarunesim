@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recréer la copie JavaScript lisible sans modifier les originaux."""
+"""Rebuild readable JavaScript without modifying the original files."""
 from pathlib import Path
 import argparse
 import json
@@ -17,7 +17,7 @@ def main():
     parser.add_argument('--work', type=Path, default=Path.cwd() / 'work' / 'deobfuscation')
     args = parser.parse_args()
     if not (TOOLS / 'node_modules' / 'webcrack').is_dir():
-        parser.exit(1, f'Installer les outils : cd "{TOOLS}" && npm ci\n')
+        parser.exit(1, f'Install the tools: cd "{TOOLS}" && npm ci\n')
     args.work.mkdir(parents=True, exist_ok=True)
     files = sorted(args.source.rglob('*.js'), key=lambda p: p.stat().st_size)
     reports = []
@@ -54,14 +54,14 @@ def main():
         smoke = stage / 'bootstrap-smoke.json'
         if len(list((stage / 'readable' / 'js').glob('boot[012]-*.js'))) == 3:
             run('smoke-bootstrap.mjs', stage / 'readable', smoke)
-        # Ne copier les résultats qu'après la réussite de tous les fichiers et des interfaces.
+        # Copy results only after every file and interface check succeeds.
         shutil.copytree(stage / 'readable', args.output, dirs_exist_ok=True)
         shutil.copyfile(validation, ROOT / 'readable-validation.json')
         if smoke.exists():
             shutil.copyfile(smoke, ROOT / 'bootstrap-smoke.json')
     (ROOT / 'recovered-names.json').write_text(json.dumps([r['names'] for r in reports], indent=2, ensure_ascii=False) + '\n')
     (ROOT / 'rebuild-report.json').write_text(json.dumps(reports, indent=2, ensure_ascii=False) + '\n')
-    print(f'{len(files)} fichiers recréés dans {args.output}')
+    print(f'{len(files)} files rebuilt in {args.output}')
 
 if __name__ == '__main__':
     main()

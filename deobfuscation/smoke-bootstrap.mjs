@@ -14,6 +14,6 @@ const sandbox={document,location:loc,navigator:{hardwareConcurrency:4,userAgent:
 sandbox.window=sandbox;sandbox.self=sandbox;sandbox.top=sandbox;
 const context=vm.createContext(sandbox),results=[];
 for(const file of files){const start=performance.now();try{new vm.Script(fs.readFileSync(path.join(root,'js',file),'utf8'),{filename:file}).runInContext(context,{timeout:2000});results.push({file:'js/'+file,ok:true,milliseconds:Math.round(performance.now()-start)});}catch(e){results.push({file:'js/'+file,ok:false,error:String(e),milliseconds:Math.round(performance.now()-start)});break;}}
-const result={kind:'synchronous-bootstrap-smoke',timeoutPerFileMs:2000,results,brandPresent:!!sandbox.__brand,bootPresent:!!sandbox.__drBoot,limits:'DOM simulé, callbacks réseau/événements non exécutés. Le comportement en navigateur se vérifie séparément.'};
+const result={kind:'synchronous-bootstrap-smoke',timeoutPerFileMs:2000,results,brandPresent:!!sandbox.__brand,bootPresent:!!sandbox.__drBoot,limits:'Mock DOM; network and event callbacks are not executed. Browser behavior is tested separately.'};
 if(report)fs.writeFileSync(report,JSON.stringify(result,null,2)+'\n');
 console.log(JSON.stringify(result));if(results.length!==3||results.some(r=>!r.ok))process.exitCode=1;
