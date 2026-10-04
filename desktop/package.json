@@ -8,7 +8,8 @@
   "scripts": {
     "start": "electron .",
     "test": "node --test content.test.cjs",
-    "build:windows": "electron-builder --win portable --x64 --publish never"
+    "build:windows": "electron-builder --win portable --x64 --publish never",
+    "build:mac": "electron-builder --mac dmg --publish never"
   },
   "devDependencies": {
     "electron": "44.5.1",
@@ -52,6 +53,15 @@
       "artifactName": "DELTARUNE-Simulator-${version}-Windows-Standalone.exe",
       "icon": "resources/icon.ico",
       "signExecutable": false
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "resources/icon.icns",
+      "category": "public.app-category.games",
+      "artifactName": "DELTARUNE-Simulator-${version}-macOS-${arch}-Standalone.dmg",
+      "identity": "-",
+      "hardenedRuntime": false,
+      "notarize": false
     },
     "portable": {
       "requestExecutionLevel": "user",

@@ -36,7 +36,13 @@ else {
     });
     ses.setPermissionRequestHandler((_contents, _permission, callback) => callback(false));
     ses.setPermissionCheckHandler(() => false);
-    Menu.setApplicationMenu(null);
+    Menu.setApplicationMenu(process.platform === 'darwin' ? Menu.buildFromTemplate([
+      { role: 'appMenu' },
+      { label: 'Edit', submenu: [{ role: 'undo' }, { role: 'redo' }, { type: 'separator' },
+        { role: 'cut' }, { role: 'copy' }, { role: 'paste' }, { role: 'selectAll' }] },
+      { label: 'View', submenu: [{ role: 'togglefullscreen' }] },
+      { role: 'windowMenu' }
+    ]) : null);
     window = new BrowserWindow({
       width: 1280, height: 900, minWidth: 640, minHeight: 540,
       title: 'DELTARUNE Fight Simulator', backgroundColor: '#000000', show: true,

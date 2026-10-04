@@ -1,0 +1,67 @@
+name: macOS standalone application
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing release to receive the standalone applications
+        required: true
+        default: v0.9.14-offline.3
+        type: string
+permissions:
+  contents: read
+jobs:
+  standalone:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-15
+            arch: arm64
+          - os: macos-15-intel
+            arch: x64
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python verify.py
+      - run: npm ci --prefix desktop
+      - run: npm test --prefix desktop
+      - run: npm run build:mac --prefix desktop -- --${{ matrix.arch }}
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Test the application inside the disk image
+        shell: bash
+        run: |
+          set -euo pipefail
+          image=(dist/desktop/*-Standalone.dmg)
+          mount=$(mktemp -d)
+          trap 'hdiutil detach "$mount" || true; rmdir "$mount" || true' EXIT
+          hdiutil attach "${image[0]}" -readonly -nobrowse -mountpoint "$mount"
+          app="$mount/DELTARUNE Fight Simulator.app"
+          codesign --verify --deep --strict "$app"
+          icon=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIconFile' "$app/Contents/Info.plist")
+          cmp desktop/resources/icon.icns "$app/Contents/Resources/$icon"
+          node desktop/test-executable.cjs "$app/Contents/MacOS/DELTARUNE Fight Simulator" desktop-smoke-macos.json
+      - name: Save test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-standalone-validation-${{ matrix.arch }}
+          path: desktop-smoke-macos.*
+          if-no-files-found: warn
+      - name: Add disk image to the existing release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release view "$RELEASE_TAG" --json tagName,isDraft
+          gh release upload "$RELEASE_TAG" dist/desktop/*-Standalone.dmg --clobber

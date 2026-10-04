@@ -4,19 +4,27 @@ A fan-made simulator for practicing DELTARUNE and UNDERTALE battles. Play throug
 
 ## Download
 
-**Windows standalone app:** download `DELTARUNE-Simulator-0.9.14-Windows-Standalone.exe` and open it. The game runs in its own window, with no browser or installation required. The first launch may take a little time while bundled files are unpacked. Press **F11** for fullscreen. Saves are stored by the application, separately from browser saves.
+Get the latest version from **[Releases](https://github.com/SakuuGamerYTB/deltarunesim/releases/latest)**. The standalone apps run offline in their own window.
 
-The ZIP downloads below run in your web browser.
+| Platform | Standalone download | How to launch |
+| --- | --- | --- |
+| Windows 64-bit | `Windows-Standalone.exe` | Open the EXE. No installation required. |
+| macOS, Apple Silicon | `macOS-arm64-Standalone.dmg` | Open the DMG, drag the app into Applications, then open it. |
+| macOS, Intel | `macOS-x64-Standalone.dmg` | Open the DMG, drag the app into Applications, then open it. |
 
-Get the latest version from **[Releases](https://github.com/SakuuGamerYTB/deltarunesim/releases/latest)**.
+On Windows, the first launch may take a little time while bundled files are unpacked. Press **F11** for fullscreen, or use **View > Toggle Full Screen** on macOS. Progress is saved by the app, separately from browser saves.
+
+The apps are not signed with a verified publisher certificate or notarized by Apple. Your operating system may show a warning. On macOS, if you trust this download, use **System Settings > Privacy & Security > Open Anyway** after trying to open the app.
+
+## Browser version
+
+The older ZIP downloads run in your web browser:
 
 | Platform | Download | Launch after extracting |
 | --- | --- | --- |
 | Windows 64-bit | `windows-x64.zip` | `DeltaruneSim.exe` |
 | macOS, Apple Silicon | `macos-arm64.zip` | `Launch.command` |
 | macOS, Intel | `macos-x64.zip` | `Launch.command` |
-
-## How to play
 
 1. Download the archive for your computer.
 2. Extract the **entire folder**.
@@ -26,8 +34,6 @@ Get the latest version from **[Releases](https://github.com/SakuuGamerYTB/deltar
 Keep the launcher's terminal window open while playing. Press **Ctrl+C** in that window to stop it. No additional software installation is required.
 
 Your progress is saved in your browser. Use the same browser and local address to keep your saves. The game works offline; external links and downloading new beatmaps require Internet.
-
-The launchers are unsigned, so your operating system may display a warning or block them according to its security settings.
 
 ## Run with Python
 
