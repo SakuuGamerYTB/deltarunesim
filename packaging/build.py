@@ -19,7 +19,7 @@ def main():
     if (platform.system(), platform.machine()) != expected[args.target]:
         parser.error('Construire chaque archive sur son système et son architecture cibles.')
     build = ROOT / 'build' / args.target
-    version = json.loads((ROOT / 'upstream-manifest.json').read_text())['version']
+    version = json.loads((ROOT / 'upstream-manifest.json').read_text(encoding='utf-8'))['version']
     name = f'deltarunesim-offline-{version}-{args.target}'
     stage = build / name
     if stage.exists():

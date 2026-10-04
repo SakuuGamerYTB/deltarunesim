@@ -5,8 +5,8 @@ import hashlib
 import json
 import sys
 root = Path(__file__).resolve().parent
-manifest = json.loads((root / 'upstream-manifest.json').read_text())
-changes = json.loads((root / 'local-changes.json').read_text())
+manifest = json.loads((root / 'upstream-manifest.json').read_text(encoding='utf-8'))
+changes = json.loads((root / 'local-changes.json').read_text(encoding='utf-8'))
 verified = modified = 0
 errors = []
 for name, meta in manifest['files'].items():

@@ -32,7 +32,7 @@ with tempfile.TemporaryDirectory() as temp:
             assert response.status == 200
             assert b'<html' in response.read().lower()
             assert "connect-src 'self'" in response.headers['Content-Security-Policy']
-            manifest = json.loads((exe.parent / 'readable-manifest.json').read_text())
+            manifest = json.loads((exe.parent / 'readable-manifest.json').read_text(encoding='utf-8'))
             main = next(item for item in manifest if item['file'].startswith('js/main-'))
             with urllib.request.urlopen(base + '/' + main['file']) as response:
                 assert hashlib.sha256(response.read()).hexdigest() == main['sha256']
