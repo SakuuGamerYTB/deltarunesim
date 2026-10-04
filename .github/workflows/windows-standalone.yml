@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows-standalone-validation
-          path: desktop-smoke-windows.json
+          path: desktop-smoke-windows.*
           if-no-files-found: warn
       - name: Add executable to the existing release
         env:

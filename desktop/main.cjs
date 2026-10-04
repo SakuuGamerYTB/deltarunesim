@@ -39,7 +39,7 @@ else {
     Menu.setApplicationMenu(null);
     window = new BrowserWindow({
       width: 1280, height: 900, minWidth: 640, minHeight: 540,
-      title: 'DELTARUNE Fight Simulator', backgroundColor: '#000000', show: !smoke,
+      title: 'DELTARUNE Fight Simulator', backgroundColor: '#000000', show: true,
       autoHideMenuBar: true,
       webPreferences: { nodeIntegration: false, contextIsolation: true, sandbox: true,
         webSecurity: true, backgroundThrottling: false, autoplayPolicy: 'no-user-gesture-required' }
@@ -60,6 +60,7 @@ else {
     if (smoke) {
       try {
         const result = await require('./smoke.cjs').run(window, { base, blocked, errors });
+        fs.writeFileSync(reportPath.replace(/\.json$/, '.png'), (await window.webContents.capturePage()).toPNG());
         fs.writeFileSync(reportPath, JSON.stringify({ ok: true, ...result }, null, 2));
         app.exit(0);
       } catch (error) {

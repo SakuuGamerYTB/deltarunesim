@@ -17,18 +17,44 @@
   "build": {
     "appId": "com.sakuugamerytb.deltarunesim",
     "productName": "DELTARUNE Fight Simulator",
-    "directories": { "output": "../dist/desktop" },
-    "files": ["main.cjs", "content.cjs", "smoke.cjs", "package.json"],
+    "directories": {
+      "output": "../dist/desktop"
+    },
+    "files": [
+      "main.cjs",
+      "content.cjs",
+      "smoke.cjs",
+      "package.json"
+    ],
     "extraResources": [
-      { "from": "../site", "to": "site" },
-      { "from": "../readable", "to": "readable" },
-      { "from": "../README.md", "to": "README.md" }
+      {
+        "from": "../site",
+        "to": "site"
+      },
+      {
+        "from": "../readable",
+        "to": "readable"
+      },
+      {
+        "from": "../README.md",
+        "to": "README.md"
+      }
     ],
     "win": {
-      "target": [{ "target": "portable", "arch": ["x64"] }],
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
       "artifactName": "DELTARUNE-Simulator-${version}-Windows-Standalone.exe",
       "signAndEditExecutable": false
     },
-    "portable": { "requestExecutionLevel": "user" }
+    "portable": {
+      "requestExecutionLevel": "user",
+      "useZip": true
+    }
   }
 }

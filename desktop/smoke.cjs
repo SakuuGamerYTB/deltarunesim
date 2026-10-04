@@ -16,7 +16,7 @@ async function run(window, { blocked, errors }) {
   const checks = await web.executeJavaScript("Array.from(document.querySelectorAll('#checks li')).map(x=>x.textContent)");
   await window.loadURL(`${ORIGIN}/`);
   await until(() => web.executeJavaScript("!document.querySelector('#boot') && !!document.querySelector('#game')"), 'game startup');
-  const state = await web.executeJavaScript(`(() => {
+  const readState = () => web.executeJavaScript(`(() => {
     const canvas = document.querySelector('#game');
     const pixels = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data;
     let nonBlack = 0;
@@ -25,11 +25,13 @@ async function run(window, { blocked, errors }) {
     return { nonBlack, nodeAccess: typeof require, origin: location.origin,
       resources: performance.getEntriesByType('resource').map(x=>x.name).filter(x=>/^https?:/.test(x)) };
   })()`);
+  await until(async () => (await readState()).nonBlack > 1000, 'game draws into its canvas');
+  const state = await readState();
   assert.ok(state.nonBlack > 1000, 'game draws into its canvas');
   assert.equal(state.nodeAccess, 'undefined');
   assert.equal(state.origin, ORIGIN);
   assert.deepEqual(state.resources, []);
-  await web.reload();
+  await window.loadURL(`${ORIGIN}/`);
   await until(() => web.executeJavaScript("!document.querySelector('#boot')"), 'reload');
   assert.equal(await web.executeJavaScript("localStorage.getItem('__desktop_smoke')"), 'saved');
   await web.executeJavaScript("localStorage.removeItem('__desktop_smoke')");
