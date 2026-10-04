@@ -1,0 +1,52 @@
+name: Windows standalone application
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing release to receive the standalone executable
+        required: true
+        default: v0.9.14-offline.3
+        type: string
+permissions:
+  contents: read
+jobs:
+  standalone:
+    runs-on: windows-2022
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python verify.py
+      - run: npm ci --prefix desktop
+      - run: npm test --prefix desktop
+      - run: npm run build:windows --prefix desktop
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Test the standalone executable
+        shell: pwsh
+        run: |
+          $executable = (Get-ChildItem dist/desktop/*-Windows-Standalone.exe).FullName
+          node desktop/test-executable.cjs $executable desktop-smoke-windows.json
+      - name: Save test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-standalone-validation
+          path: desktop-smoke-windows.json
+          if-no-files-found: warn
+      - name: Add executable to the existing release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        shell: pwsh
+        run: |
+          gh release view "$env:RELEASE_TAG" --json tagName,isDraft
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $executable = (Get-ChildItem dist/desktop/*-Windows-Standalone.exe).FullName
+          gh release upload "$env:RELEASE_TAG" "$executable"

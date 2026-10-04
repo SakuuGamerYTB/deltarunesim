@@ -4,6 +4,10 @@ A fan-made simulator for practicing DELTARUNE and UNDERTALE battles. Play throug
 
 ## Download
 
+**Windows standalone app:** download `DELTARUNE-Simulator-0.9.14-Windows-Standalone.exe` and open it. The game runs in its own window, with no browser or installation required. The first launch may take a little time while bundled files are unpacked. Press **F11** for fullscreen. Saves are stored by the application, separately from browser saves.
+
+The ZIP downloads below run in your web browser.
+
 Get the latest version from **[Releases](https://github.com/SakuuGamerYTB/deltarunesim/releases/latest)**.
 
 | Platform | Download | Launch after extracting |

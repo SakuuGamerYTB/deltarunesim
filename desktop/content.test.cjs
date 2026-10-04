@@ -1,0 +1,47 @@
+const { test, after } = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const { createHandler, isAllowedRequest } = require('./content.cjs');
+const base = fs.mkdtempSync(path.join(os.tmpdir(), 'sim-protocol-'));
+for (const name of ['site/js', 'readable/js', 'site/fight/demo', 'site/api']) fs.mkdirSync(path.join(base, name), { recursive: true });
+fs.writeFileSync(path.join(base, 'site/index.html'), '<html>game</html>');
+fs.writeFileSync(path.join(base, 'site/fight/demo/index.html'), '<html>fight</html>');
+fs.writeFileSync(path.join(base, 'site/js/main.js'), 'original');
+fs.writeFileSync(path.join(base, 'readable/js/main.js'), 'readable');
+fs.writeFileSync(path.join(base, 'site/audio.wav'), '0123456789');
+fs.writeFileSync(path.join(base, 'site/api/stats'), '{"v":1}');
+const handle = createHandler(base);
+const get = (url, options) => handle(new Request(`sim://localhost${url}`, options));
+after(() => fs.rmSync(base, { recursive: true, force: true }));
+test('loads readable scripts and extensionless pages with an offline CSP', async () => {
+  const script = await get('/js/main.js');
+  assert.equal(await script.text(), 'readable');
+  assert.equal(script.headers.get('content-type'), 'text/javascript');
+  assert.match(script.headers.get('content-security-policy'), /connect-src 'self'/);
+  assert.equal(await (await get('/fight/demo')).text(), '<html>fight</html>');
+  assert.equal((await get('/api/stats')).headers.get('content-type'), 'application/json');
+});
+test('supports media ranges, suffixes, HEAD and invalid ranges', async () => {
+  const range = await get('/audio.wav', { headers: { Range: 'bytes=2-5' } });
+  assert.equal(range.status, 206);
+  assert.equal(range.headers.get('content-range'), 'bytes 2-5/10');
+  assert.equal(await range.text(), '2345');
+  assert.equal(await (await get('/audio.wav', { headers: { Range: 'bytes=-3' } })).text(), '789');
+  assert.equal((await get('/audio.wav', { headers: { Range: 'bytes=99-' } })).status, 416);
+  const head = await get('/audio.wav', { method: 'HEAD' });
+  assert.equal(head.headers.get('content-length'), '10');
+  assert.equal(await head.text(), '');
+});
+test('rejects traversal and foreign hosts; telemetry stays local', async () => {
+  assert.equal((await get('/%2e%2e%2fsecret')).status, 403);
+  assert.equal((await get('/..%5csecret')).status, 403);
+  assert.equal((await handle(new Request('sim://other/index.html'))).status, 403);
+  assert.equal((await get('/missing')).status, 404);
+  assert.equal((await get('/api/stats', { method: 'POST', body: '{}' })).status, 204);
+  assert.equal(isAllowedRequest('https://deltarunesim.com/js/main.js'), false);
+  assert.equal(isAllowedRequest('http://127.0.0.1:8766/'), false);
+  assert.equal(isAllowedRequest('sim://localhost.evil/index.html'), false);
+  assert.equal(isAllowedRequest('sim://localhost/js/main.js'), true);
+});
