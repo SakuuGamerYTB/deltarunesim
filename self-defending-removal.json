@@ -1,0 +1,826 @@
+[
+  {
+    "file": "assets/site/home.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "assets/updates/page.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/snapshot-XNSQF3I5.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/beamworker-3JHFDG5I.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-K2UEFTKG.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-C73DX24Y.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "assets/site/fun.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/ut_fights-OCHEGZKB.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/beam-NXNPPO2V.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-RZB5IYPC.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/chapterpack-D45U4UKK.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/ut_karma-YZRTWBUW.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-RCESYQVO.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-LMUAGGOT.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-D25OTDJR.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/collisions-PYGJA7YX.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-HNY5HQH6.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-7KTSNHPG.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-VFC4CBUA.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-6L7G2UVM.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-G7GV27R6.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-LBPMJTDY.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/heart-3C2QCZDY.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/oracle-JIZ4HJL7.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-KQJ2KXSW.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-7ALSIY2V.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/wiresnap-VSWJPGTH.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-GSXZ7ZAD.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-NCBQJ37F.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-UX5ODO2V.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-JWDRMKTH.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/fightsetup-MYY3L3NB.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-3CJN6VAC.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-PDMKFG45.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-YW5GDMJD.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-UCWYAF7F.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/bullets-OIROYDZK.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-EZT5GQKQ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/autoplay-BN5PY2E6.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-IAIZGKIB.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/globals-Y7HSE7MN.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-EEGGVV7T.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/battle-BT4B2MQU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-2HIERSMS.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-Y6LEVRWV.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DQ2OU22B.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/fights-7SUHM6IN.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-FKDNMQDJ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-RMRU7YXJ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-OLHKEXN2.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-3FE7QPYV.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-ZSVZXLS4.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-PKDBVEKU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-CLVNTQWO.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-PIEPTJTC.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-XQLDTUDX.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DPJDJRIX.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-VIEPF33A.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DC6NVUBT.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-6EHOUWYQ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-NGEA7BNE.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-ZMRRAIXG.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-UX3MYPHJ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-SGRLHOI4.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-I2ROP6YV.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-HK2I5I5O.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-3RIDYQEU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-QDHSYFWR.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-BAQBIODG.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-ZYHT2Y6D.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-KA65IITJ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-N4A5GH64.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-65UEDHAC.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-VD4WD5M6.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/ghostworker-SRP7HZKA.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-ASAACX43.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-226JUMCZ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-JIJZKEBP.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-M4FFNAFW.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-G37MEJHM.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-3P4KIAZQ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "assets/check/check.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/gm-DVHMTG3U.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-VZ7XJPJD.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/ut_runtime-PHYHNINC.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-4VFUSDHI.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-XJSTORLE.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/capture_gifworker-DC4XPPZT.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-YST6GS7R.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-XKUIFJAD.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-VNDJ6YIS.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-73STUBDI.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-WHJ44MEB.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-SATHSCNU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-42A6QMSH.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-FCPQIX2O.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-MTKTFWX5.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/videoworker-TCTF57HV.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-EOL7J25D.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-AIXI7KPB.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-QBK63GC6.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-JPNN6LRY.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-EUQCKUJR.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "cdn-cgi/challenge-platform/scripts/jsd/main.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-FB7RX7OW.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-EXUFI6VR.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DDV4MDJY.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-OHAPZHQZ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-Y4PDXFTV.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-N4ZGLSFU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-5XRXNPLP.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-2ZZT2QT3.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-7WTHUZT5.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DMFSAC6H.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-TJDIJSLU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-VOXW6GSU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-L4BUOJC2.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DG6727IA.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-5WLJWN67.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-QZOXK6RN.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-ZF4DELGJ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-ZV44JVDZ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-LSOQJHKM.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-B5KRNFOD.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-AINRVKQU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-HXQA6GAY.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-XCIGYEXW.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-PF7AREFU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-FBA3VTQ3.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-KCLR4RP5.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-CBQDGLYI.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-GYARX7EU.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-2V4NTFVZ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-74XQOPMX.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "assets/stats/stats.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-A7U3M6GJ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/boot1-f3626d0a.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-YH3ITBTJ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-56YGV4HH.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-64DWZE3K.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-IPGRXV6K.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-7PMDRAWG.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/boot0-6507ab0f.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-B4D3THQO.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-4W34X7CH.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-KR3CFYPB.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-DJYTGNFF.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-E4CQRSAZ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-JSDMDHMG.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-YJJCI5ES.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-AWYBS4TS.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-2PJAEYDC.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-UOADV6RY.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-2RQRF37Y.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-6SDT42QI.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-D6ZXNKTF.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-VNO7ILLI.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-DIW6CMTT.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-R2UT2K2Z.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-LT2LQFPM.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-SEM2A64W.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-AI4HXBTE.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DTP2KWIQ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-FMIAGHDE.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-56TFRIWF.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-NV5ZPRFB.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-K45EDNDM.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-PKQMOVJF.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-5P5JMDSC.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/boot2-fcf25262.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-2LH55I4R.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-KKNLUQT5.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-BJHZERC3.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-PL4HTHAA.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "assets/updates/view.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-AZKL3KAT.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-XLMEM2NY.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-B44KK4IY.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-WL43FMPI.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-IGYEADXQ.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-W4YF6JKK.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-GXG7QXPE.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-NREEGWG7.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DQPL3JRB.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-37AIAL6I.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-OWAP2V6I.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-H2IJMUFG.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-Y4HOFVS7.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-HXB3NHS7.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-BZZMR4A2.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-BVN7GQEE.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-6MBRV3D2.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-EVUTBL4V.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-RUJ4WDEA.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-3QQLJXJV.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-5APM5PG3.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-P4DGRHJ4.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-YHNLNCFM.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-S7IQ44WH.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-DLYKGROY.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/c-BMHJCKUP.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-ZVI3XE2Z.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-P47RSPTL.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-OAN44ZPE.js",
+    "guardsRemoved": 1
+  },
+  {
+    "file": "js/c-UW5SWED7.js",
+    "guardsRemoved": 0
+  },
+  {
+    "file": "js/main-5HNX3WWC.js",
+    "guardsRemoved": 0
+  }
+]

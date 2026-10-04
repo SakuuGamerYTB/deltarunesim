@@ -1,0 +1,500 @@
+var P = function () {
+  ;
+  var F = true;
+  return function (T, I) {
+    var n = F ? function () {
+      if (I) {
+        var t = I.apply(T, arguments);
+        I = null;
+        return t;
+      }
+    } : function () {};
+    F = false;
+    return n;
+  };
+}();
+import { _F as Z } from "./c-UW5SWED7.js";
+import { Ma as Y } from "./c-Y4PDXFTV.js";
+import "./c-QZOXK6RN.js";
+import "./c-YST6GS7R.js";
+import "./c-Y4HOFVS7.js";
+import "./c-ZF4DELGJ.js";
+import "./c-74XQOPMX.js";
+import "./c-SEM2A64W.js";
+import { Lh as j } from "./c-D6ZXNKTF.js";
+import "./c-PF7AREFU.js";
+import "./c-VNDJ6YIS.js";
+import "./c-I2ROP6YV.js";
+import "./c-EUQCKUJR.js";
+import "./c-YJJCI5ES.js";
+import "./c-FMIAGHDE.js";
+import { a as M, l as H } from "./c-PIEPTJTC.js";
+H();
+var {
+  AR: u,
+  FIRST: U,
+  SETALL: l
+} = j;
+var C = new Proxy({}, {
+  get: M((F, T) => Z[T] || Y[T], "get")
+});
+var ROOM = {
+  name: "room_board_prepostshadowmantle",
+  w: 640,
+  h: 960,
+  color: 0,
+  drawColor: false,
+  speed: 0,
+  views: [{
+    x: 0,
+    y: 0,
+    w: 640,
+    h: 480,
+    follow: null,
+    bx: 0,
+    by: 0
+  }],
+  rcc: null,
+  layers: [{
+    name: "BoardAreaReferences",
+    type: "Assets",
+    depth: 0,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    sprites: [{
+      spr: "spr_whitepixel",
+      x: 128,
+      y: 64,
+      xs: 384,
+      ys: 256,
+      color: 0,
+      alpha: 0.1255,
+      frame: 0,
+      speed: 1,
+      rot: 0,
+      id: "graphic_62DBDC26_1_1_1_1_1"
+    }],
+    instances: []
+  }, {
+    name: "GAMESHOW_Instances",
+    type: "Instances",
+    depth: 100,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    instances: [{
+      obj: "obj_gameshow_swordroute",
+      x: -64,
+      y: 0,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103861,
+      pre: null,
+      cc: null
+    }]
+  }, {
+    name: "BOARD_Instances",
+    type: "Instances",
+    depth: 900000,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    instances: [{
+      obj: "obj_darkcontroller",
+      x: -32,
+      y: 0,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103862,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_controller",
+      x: -32,
+      y: 96,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103863,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_camera",
+      x: -32,
+      y: 128,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103864,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_mainchara",
+      x: -224,
+      y: 192,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103865,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_mainchara_board",
+      x: 304,
+      y: 426,
+      xs: 2,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103866,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 128,
+      y: 224,
+      xs: 1,
+      ys: 11,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103867,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 480,
+      y: 224,
+      xs: 1,
+      ys: 11,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103868,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 224,
+      y: 224,
+      xs: 8,
+      ys: 4,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103869,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 160,
+      y: 544,
+      xs: 10,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103870,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 448,
+      y: 512,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103871,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 224,
+      y: 384,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103872,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 192,
+      y: 416,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103873,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 192,
+      y: 480,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103874,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 256,
+      y: 448,
+      xs: 1,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103875,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 320,
+      y: 480,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103876,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 352,
+      y: 384,
+      xs: 1,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103877,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 288,
+      y: 384,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103878,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 416,
+      y: 384,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103879,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 416,
+      y: 448,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103880,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 384,
+      y: 480,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103881,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_smokepuff",
+      x: 160,
+      y: 352,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103882,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_smokepuff",
+      x: 160,
+      y: 320,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103883,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_smokepuff",
+      x: 192,
+      y: 320,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103884,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_prepostshadowmantle",
+      x: 176,
+      y: 128,
+      xs: 2,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103885,
+      pre: null,
+      cc: null
+    }]
+  }, {
+    name: "BOARD_Tiles",
+    type: "Tiles",
+    depth: 1000000,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    tileset: {
+      bg: "bg_board_adventure_tileset",
+      tw: 32,
+      th: 32,
+      bx: 2,
+      by: 2,
+      cols: 30
+    },
+    tilesX: 20,
+    tilesY: 30,
+    data: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 405, 405, 405, 405, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 352, 352, 352, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 352, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 353, 353, 353, 353, 353, 353, 353, 353, 353, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 352, 352, 352, 352, 352, 352, 352, 352, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 352, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 355, 352, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 352, 352, 352, 352, 352, 352, 352, 352, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 353, 353, 353, 353, 353, 353, 353, 353, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 352, 353, 352, 353, 352, 353, 352, 353, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 352, 353, 353, 353, 353, 352, 353, 353, 353, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 353, 352, 353, 353, 353, 353, 352, 353, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 352, 353, 352, 353, 352, 353, 352, 353, 353, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 353, 353, 353, 353, 353, 353, 353, 352, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+    instances: []
+  }, {
+    name: "Compatibility_Colour",
+    type: "Background",
+    depth: 2147483600,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    bg: {
+      spr: null,
+      visible: true,
+      fore: false,
+      htile: false,
+      vtile: false,
+      stretch: false,
+      color: 6710886,
+      alpha: 1,
+      frame: 0,
+      speed: 15
+    },
+    instances: []
+  }]
+};
+ROOM.ginst = [103865, 103862, 103864, 103866, 103861, 103863, 103867, 103868, 103869, 103870, 103871, 103872, 103873, 103874, 103875, 103876, 103877, 103878, 103879, 103880, 103881, 103882, 103883, 103884, 103885];
+ROOM.ginst = [103865, 103862, 103864, 103866, 103861, 103863, 103867, 103868, 103869, 103870, 103871, 103872, 103873, 103874, 103875, 103876, 103877, 103878, 103879, 103880, 103881, 103882, 103883, 103884, 103885];
+ROOM.ginst = [103865, 103862, 103864, 103866, 103861, 103863, 103867, 103868, 103869, 103870, 103871, 103872, 103873, 103874, 103875, 103876, 103877, 103878, 103879, 103880, 103881, 103882, 103883, 103884, 103885];
+ROOM.ginst = [103865, 103862, 103864, 103866, 103861, 103863, 103867, 103868, 103869, 103870, 103871, 103872, 103873, 103874, 103875, 103876, 103877, 103878, 103879, 103880, 103881, 103882, 103883, 103884, 103885];
+export { ROOM };

@@ -1,0 +1,302 @@
+[
+  {
+    "file": "assets/site/launch/t-copy.png",
+    "sha256": "fb6ac63185d04282b5a8e9ebc4c5e1a5f0ace3a1dff885b773cda5a0144603a7",
+    "bytes": 192
+  },
+  {
+    "file": "assets/site/launch/t-source-on-github.png",
+    "sha256": "2f47e88ee1993a5654511d50966b454c1938fd7dbed593ab4b3caded3a76fdbb",
+    "bytes": 286
+  },
+  {
+    "file": "assets/site/launch/t-terminal.png",
+    "sha256": "7881f8ca067a6b5ffb2993a2688114858b7383bca1db2a84ef87e61cf333c8ec",
+    "bytes": 247
+  },
+  {
+    "file": "assets/site/launch/t-anonymous-numbers.png",
+    "sha256": "1f1ec3f66b56532b9b5a2585dcbc1e8550e593843f995a67324f6a2dbde1930b",
+    "bytes": 323
+  },
+  {
+    "file": "assets/site/launch/t-aqua.png",
+    "sha256": "b980df277446a3782623d480a49adac7fbec5823e6fa67e966742675aeaca42b",
+    "bytes": 188
+  },
+  {
+    "file": "assets/site/launch/t-asgore.png",
+    "sha256": "f21375c44f59211bb3d2865cd1944b9f584f6c42ba92352f84174e7bea6572ad",
+    "bytes": 212
+  },
+  {
+    "file": "assets/site/launch/t-asriel-dreemurr.png",
+    "sha256": "681ccf031b543155a2ad576ee8405093b4db727fe57fc9ffaf57ec7ec3e168af",
+    "bytes": 289
+  },
+  {
+    "file": "assets/site/launch/t-bad-apple.png",
+    "sha256": "4d7e710204cf3fdf01b2e8cefc3b188583991b67b5014773f009870ba7788601",
+    "bytes": 224
+  },
+  {
+    "file": "assets/site/launch/t-berdly.png",
+    "sha256": "b1ba28979fd50afe7b9d7dab7a95abe8eb0aafcfb8a9eac06f04c9b390fb173f",
+    "bytes": 198
+  },
+  {
+    "file": "assets/site/launch/t-blackjack.png",
+    "sha256": "ceb7a8719e9500f5b728c4746be1b7c2d92555257d8b6c0590b12122a525c2b0",
+    "bytes": 237
+  },
+  {
+    "file": "assets/site/launch/t-blue-yellow.png",
+    "sha256": "78ad6db463065f75be416ee99786f8ee1394fce97953c97d4e9824f17ea8a7f6",
+    "bytes": 271
+  },
+  {
+    "file": "assets/site/launch/t-dark-world-survivors.png",
+    "sha256": "b7b5b4b512d4d5f9ca81d13ed26a9cf8ae9b22aee695c84cfaa2281bac197128",
+    "bytes": 338
+  },
+  {
+    "file": "assets/site/launch/t-darkdle.png",
+    "sha256": "1ee24891aebc8596da9db328c9c4b79b10cb24918aad30741933ccc50acca29d",
+    "bytes": 219
+  },
+  {
+    "file": "assets/site/launch/t-flowery.png",
+    "sha256": "2aae047522d2b1914a71589a9c9a1d97f498bc120faf5f73bbade5f69f4c59ee",
+    "bytes": 217
+  },
+  {
+    "file": "assets/site/launch/t-giga-queen.png",
+    "sha256": "b6eb0e7f8373f8754a19de8ef293b8a9e8f89dc0ee842f1da49de741cd5b89db",
+    "bytes": 255
+  },
+  {
+    "file": "assets/site/launch/t-hammer-of-justice.png",
+    "sha256": "1e2c0c1c57a11697d50266ab50e08b77271b71da825aa49bbcef4d4913e01e1a",
+    "bytes": 328
+  },
+  {
+    "file": "assets/site/launch/t-jackenstein.png",
+    "sha256": "7fb0916552c3d2acd5b8fa04efd26c93fbbb4178b902c54fc9929608309ee6b6",
+    "bytes": 277
+  },
+  {
+    "file": "assets/site/launch/t-jevil.png",
+    "sha256": "d876b4b9976df7b008e7653e1af2ecf8bc9ffa3392f3785c73f7d3eda6cdb9a7",
+    "bytes": 199
+  },
+  {
+    "file": "assets/site/launch/t-k-round.png",
+    "sha256": "5b981eb05592db152152c2d6cd538ae7c6efebf94107b7a1bf739f4d50d48a22",
+    "bytes": 222
+  },
+  {
+    "file": "assets/site/launch/t-king.png",
+    "sha256": "3a7bec677cff4e8fd77f1a4c556968a1b1d5c100e9718131d3bec5497a946759",
+    "bytes": 208
+  },
+  {
+    "file": "assets/site/launch/t-lancer.png",
+    "sha256": "4c71480f42accae3519dffddf0c709db3cadde5e27a06ef3a574dfbe743de835",
+    "bytes": 227
+  },
+  {
+    "file": "assets/site/launch/t-lanino-elnina-rematch.png",
+    "sha256": "02997c08456ed2b096ea0e4be00c62a5d3b1aa20009dba79638ec5dc8864d54f",
+    "bytes": 404
+  },
+  {
+    "file": "assets/site/launch/t-lanino-elnina.png",
+    "sha256": "35760f6a0fff27b2747de4fea0ccc424123736ae48d8b5d50ffb34a3e0e4a83c",
+    "bytes": 293
+  },
+  {
+    "file": "assets/site/launch/t-mad-dummy.png",
+    "sha256": "16b36d06ddca774cd477560523690cf358a8cbdac5666ff7c42669cabd77f07f",
+    "bytes": 244
+  },
+  {
+    "file": "assets/site/launch/t-mania.png",
+    "sha256": "d26db037fa98f8b8918d2cb6f4c73f60153d6c7852c3a2105153d0801e9863b3",
+    "bytes": 215
+  },
+  {
+    "file": "assets/site/launch/t-mettaton-ex.png",
+    "sha256": "ee1adc65309d2e0559f74569425b6a59db6b6d45560c846ef2c5ea97d54b060c",
+    "bytes": 269
+  },
+  {
+    "file": "assets/site/launch/t-mettaton-neo.png",
+    "sha256": "faaa3c44fdd133e0363ed8a7904211dc2e4dd5422a4cb0e5cef01ac1136f9f9f",
+    "bytes": 263
+  },
+  {
+    "file": "assets/site/launch/t-more-fights.png",
+    "sha256": "e5c779320dea2b66c8eef2625fba20f75402b0b8a97cdb6aed5b78aca45575b1",
+    "bytes": 258
+  },
+  {
+    "file": "assets/site/launch/t-muffet.png",
+    "sha256": "a63c2740eb94ec751121dfdc9f624de30a1714684b72ba99e2c909196f3d9680",
+    "bytes": 211
+  },
+  {
+    "file": "assets/site/launch/t-napstablook.png",
+    "sha256": "d65fe48a9c145593431cb3cacc4ecc4b747b15346e7668df5f7d19676d58b189",
+    "bytes": 271
+  },
+  {
+    "file": "assets/site/launch/t-orange-green.png",
+    "sha256": "9caf360b1dfadb9fbac18419552737a91b9a1d149c6e038813ead223d70c0bde",
+    "bytes": 290
+  },
+  {
+    "file": "assets/site/launch/t-papyrus.png",
+    "sha256": "5bab384078c71bd8b4980d1462e1a7dc518bdef4d4377007a1a7aa1df49ed5c1",
+    "bytes": 227
+  },
+  {
+    "file": "assets/site/launch/t-photoshop-flowey.png",
+    "sha256": "d4bf555fdab6a035f59a428870dee35052c4438d5d2fb79fb49dd043a97d326d",
+    "bytes": 299
+  },
+  {
+    "file": "assets/site/launch/t-pink.png",
+    "sha256": "dd7d54c46eed26365b559c12ddd0ddd7f71547d61f3276ab5a769fd894a5a44e",
+    "bytes": 195
+  },
+  {
+    "file": "assets/site/launch/t-play-darkdle-y.png",
+    "sha256": "d04790b892e4b8d58521ae1ff0d748c5629ad7369780c81e44c7fadef415be54",
+    "bytes": 265
+  },
+  {
+    "file": "assets/site/launch/t-play-this-fight-y.png",
+    "sha256": "169e5090af1c425b91dd9fe3403c0c5e00662a199e85e7801aefe58ba475d106",
+    "bytes": 276
+  },
+  {
+    "file": "assets/site/launch/t-play-this-game-y.png",
+    "sha256": "74e8adc10dea8b03f3b1e6bc03b3a3b424a016023e1f1ec5788e62fe77e6773d",
+    "bytes": 301
+  },
+  {
+    "file": "assets/site/launch/t-queen.png",
+    "sha256": "d8bb508edf48ace0a61e64a21c6c77a8e3f0e236005df75edf0e21008563a43a",
+    "bytes": 201
+  },
+  {
+    "file": "assets/site/launch/t-rouxls-kaard.png",
+    "sha256": "d4a8985dbc0aeaf5cf7f9303938ae504396f6f788af34956cd1508bea1011908",
+    "bytes": 266
+  },
+  {
+    "file": "assets/site/launch/t-sans.png",
+    "sha256": "69669615a59beed3f5f9e4063cdc579f7cd648ff98a3083b023c31bb8c46b633",
+    "bytes": 201
+  },
+  {
+    "file": "assets/site/launch/t-seth-aqua.png",
+    "sha256": "e537232fa360851ed653f803375e05fed8b223e3644c8794016a8def3f36839e",
+    "bytes": 265
+  },
+  {
+    "file": "assets/site/launch/t-shuttah.png",
+    "sha256": "e577a9f444ac12d2861246c36b0f6664c6d310e5db0f56d70e6e374207a0daea",
+    "bytes": 212
+  },
+  {
+    "file": "assets/site/launch/t-sound-of-justice.png",
+    "sha256": "126dda7871912d6aded8ad1275519a96dac64401648a582e52c6b2a65c562675",
+    "bytes": 286
+  },
+  {
+    "file": "assets/site/launch/t-spamton-neo.png",
+    "sha256": "c8921768d0c0ef0e133b3b5ac581d86a3dfd987785f2ba05dacefc9980bbb8da",
+    "bytes": 270
+  },
+  {
+    "file": "assets/site/launch/t-spamton.png",
+    "sha256": "a2232b161b66a78666344f5a02d085008d9e27d67b58071669f599fcfd66fa46",
+    "bytes": 234
+  },
+  {
+    "file": "assets/site/launch/t-spell-card-rush.png",
+    "sha256": "0ee9978464bf46658507665a945319b696fa68680502241a1798485a8b76c312",
+    "bytes": 274
+  },
+  {
+    "file": "assets/site/launch/t-susie-lancer.png",
+    "sha256": "704bd5467d6bf79fcd96b342b584652e65a9726b7d4328922d4f9979db1dcec6",
+    "bytes": 301
+  },
+  {
+    "file": "assets/site/launch/t-sweet-cap-n-cakes.png",
+    "sha256": "3bbd7671e3bcb099b14038d636a4fcfe6c3e71c8fe1f18dc63847cd5184b409d",
+    "bytes": 318
+  },
+  {
+    "file": "assets/site/launch/t-tenna.png",
+    "sha256": "408dc650329d47971eb53b83a9ab1189bff57ce2fdddd0d80ae1f4c4655c8d74",
+    "bytes": 193
+  },
+  {
+    "file": "assets/site/launch/t-tetris.png",
+    "sha256": "e18bbdbbb2e714ae60ee446aee2e4504d3082942b036d48a292ec85f42830b77",
+    "bytes": 207
+  },
+  {
+    "file": "assets/site/launch/t-the-details.png",
+    "sha256": "93e65d1efa9a299a92aaa793de8ac10a17145fd8aa28d434bf352e3a940281d7",
+    "bytes": 259
+  },
+  {
+    "file": "assets/site/launch/t-the-roaring-knight.png",
+    "sha256": "182e304944283dacbf4c69e33320f92acd14aef04ef495848417f48027e9c5d7",
+    "bytes": 321
+  },
+  {
+    "file": "assets/site/launch/t-titan.png",
+    "sha256": "cbef41668b2382430b18f178a7d70ed4f776c27de23fbe8fb2e702df94fee705",
+    "bytes": 183
+  },
+  {
+    "file": "assets/site/launch/t-toriel.png",
+    "sha256": "9bcbf2c54bb316e56e2d43fcd283b6181dfe3095af331792152ebbff36617208",
+    "bytes": 199
+  },
+  {
+    "file": "assets/site/launch/t-trashy-trio.png",
+    "sha256": "9f4713abca8e611754c2365fc720cd2ffa4c4fdf2f282ac3a0d584f40568b272",
+    "bytes": 250
+  },
+  {
+    "file": "assets/site/launch/t-turn-it-off.png",
+    "sha256": "6673d50461a3de31063ef0d473b62e2fbedaea2fe2e9dc1ba528ea0f33b0cc8d",
+    "bytes": 236
+  },
+  {
+    "file": "assets/site/launch/t-undyne-the-undying.png",
+    "sha256": "c409d687a3c06ba6a04057efb323ab853781a736d2839832746caca6b5380d1f",
+    "bytes": 296
+  },
+  {
+    "file": "assets/site/launch/t-undyne.png",
+    "sha256": "d948a1e936f83fac3b2e2510546e3e46011c8a6fc40f54fe18e6ba28d16e30c5",
+    "bytes": 208
+  },
+  {
+    "file": "assets/site/launch/t-watercooler.png",
+    "sha256": "39e4634c93be0133a8fb2ea96fc72150a7338f3b788eba61f1d888be1cabd3cc",
+    "bytes": 253
+  },
+  {
+    "file": "assets/site/launch/t-your-saves.png",
+    "sha256": "469b0327b943f5fe2486e5de42d158c55d151ac85d98a7aa6fd42c3038d4fec8",
+    "bytes": 252
+  }
+]

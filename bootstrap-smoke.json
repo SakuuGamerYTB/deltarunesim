@@ -1,0 +1,24 @@
+{
+  "kind": "synchronous-bootstrap-smoke",
+  "timeoutPerFileMs": 2000,
+  "results": [
+    {
+      "file": "js/boot0-6507ab0f.js",
+      "ok": true,
+      "milliseconds": 1
+    },
+    {
+      "file": "js/boot1-f3626d0a.js",
+      "ok": true,
+      "milliseconds": 0
+    },
+    {
+      "file": "js/boot2-fcf25262.js",
+      "ok": true,
+      "milliseconds": 1
+    }
+  ],
+  "brandPresent": true,
+  "bootPresent": true,
+  "limits": "DOM simulé, callbacks réseau/événements non exécutés. Le comportement en navigateur se vérifie séparément."
+}

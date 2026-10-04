@@ -1,0 +1,66 @@
+var E = function () {
+  ;
+  var C = true;
+  return function (Q, T) {
+    var H = C ? function () {
+      if (T) {
+        var D = T.apply(Q, arguments);
+        T = null;
+        return D;
+      }
+    } : function () {};
+    C = false;
+    return H;
+  };
+}();
+import { a as DERIVED, b as NAMES, c as tidy, d as setFights, e as fightEnemies, f as fightAttacks, g as attackId, h as findAttack, i as attackTitle, j as pinAttack, k as unpinAll, l as attackStarted } from "./c-DTP2KWIQ.js";
+import "./c-DLYKGROY.js";
+import "./c-P4DGRHJ4.js";
+import "./c-GXG7QXPE.js";
+import "./c-LT2LQFPM.js";
+import "./c-EOL7J25D.js";
+import "./c-EVUTBL4V.js";
+import "./c-KA65IITJ.js";
+import "./c-NV5ZPRFB.js";
+import "./c-WL43FMPI.js";
+import "./c-S7IQ44WH.js";
+import "./c-QDHSYFWR.js";
+import "./c-BMHJCKUP.js";
+import "./c-Y6LEVRWV.js";
+import "./c-HXQA6GAY.js";
+import "./c-56YGV4HH.js";
+import "./c-IGYEADXQ.js";
+import "./c-KCLR4RP5.js";
+import "./c-N4ZGLSFU.js";
+import "./c-FBA3VTQ3.js";
+import "./c-5WLJWN67.js";
+import "./c-JPNN6LRY.js";
+import "./c-VNO7ILLI.js";
+import "./c-RMRU7YXJ.js";
+import "./c-7PMDRAWG.js";
+import "./c-5APM5PG3.js";
+import "./c-QZOXK6RN.js";
+import "./c-YST6GS7R.js";
+import "./c-Y4HOFVS7.js";
+import "./c-SATHSCNU.js";
+import "./c-4W34X7CH.js";
+import "./c-K45EDNDM.js";
+import "./c-3FE7QPYV.js";
+import "./c-UOADV6RY.js";
+import "./c-AWYBS4TS.js";
+import "./c-ZF4DELGJ.js";
+import "./c-PL4HTHAA.js";
+import "./c-TJDIJSLU.js";
+import "./c-MTKTFWX5.js";
+import "./c-VD4WD5M6.js";
+import "./c-74XQOPMX.js";
+import "./c-SEM2A64W.js";
+import "./c-D6ZXNKTF.js";
+import "./c-PF7AREFU.js";
+import "./c-VNDJ6YIS.js";
+import "./c-I2ROP6YV.js";
+import "./c-EUQCKUJR.js";
+import "./c-YJJCI5ES.js";
+import "./c-FMIAGHDE.js";
+import "./c-PIEPTJTC.js";
+export { DERIVED, NAMES, attackId, attackStarted, attackTitle, fightAttacks, fightEnemies, findAttack, pinAttack, setFights, tidy, unpinAll };

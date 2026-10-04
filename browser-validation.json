@@ -1,0 +1,34 @@
+{
+  "build": "2026-10-04T12:05:05.264Z",
+  "url": "http://127.0.0.1:8768/",
+  "audioBefore": {
+    "frame": 781,
+    "primary": "ch4_extra_boss",
+    "stems": [
+      {
+        "key": "ch4_extra_boss",
+        "level": 0.7,
+        "paused": false
+      }
+    ]
+  },
+  "audioAfter": {
+    "frame": 638,
+    "primary": "ch4_extra_boss",
+    "stems": [
+      {
+        "key": "ch4_extra_boss",
+        "level": 0.7,
+        "paused": false
+      }
+    ]
+  },
+  "exceptions": [],
+  "externalResources": [],
+  "scenarios": [
+    "Titre 365 combats",
+    "Hammer of Justice : défense, dialogue",
+    "REWIND 5S : retour de 781 à 638 après reprise",
+    "Page Roaring Knight : images chargées"
+  ]
+}

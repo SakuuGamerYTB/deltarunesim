@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@babel/generator": "^8.0.6",
+    "@babel/parser": "^7.29.9",
+    "@babel/traverse": "^8.0.6",
+    "@babel/types": "^8.0.6",
+    "acorn": "^8.18.0",
+    "babel7-generator": "npm:@babel/generator@^7.29.8",
+    "babel7-parser": "npm:@babel/parser@^7.29.9",
+    "babel7-traverse": "npm:@babel/traverse@^7.29.8",
+    "babel7-types": "npm:@babel/types@^7.29.8",
+    "prettier": "^3.9.9",
+    "webcrack": "^2.16.0"
+  }
+}

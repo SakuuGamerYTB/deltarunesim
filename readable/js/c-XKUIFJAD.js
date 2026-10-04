@@ -1,0 +1,541 @@
+var Z = function () {
+  ;
+  var k = true;
+  return function (z, f) {
+    var d = k ? function () {
+      if (f) {
+        var V = f.apply(z, arguments);
+        f = null;
+        return V;
+      }
+    } : function () {};
+    k = false;
+    return d;
+  };
+}();
+import { _F as x } from "./c-UW5SWED7.js";
+import { Ma as T } from "./c-Y4PDXFTV.js";
+import "./c-QZOXK6RN.js";
+import "./c-YST6GS7R.js";
+import "./c-Y4HOFVS7.js";
+import "./c-ZF4DELGJ.js";
+import "./c-74XQOPMX.js";
+import "./c-SEM2A64W.js";
+import { Lh as c } from "./c-D6ZXNKTF.js";
+import "./c-PF7AREFU.js";
+import "./c-VNDJ6YIS.js";
+import "./c-I2ROP6YV.js";
+import "./c-EUQCKUJR.js";
+import "./c-YJJCI5ES.js";
+import "./c-FMIAGHDE.js";
+import { a as K, l as C } from "./c-PIEPTJTC.js";
+C();
+var {
+  AR: p,
+  FIRST: E,
+  SETALL: X
+} = c;
+var Q = new Proxy({}, {
+  get: K((k, z) => x[z] || T[z], "get")
+});
+var ROOM = {
+  name: "room_board_postshadowmantle",
+  w: 640,
+  h: 480,
+  color: 0,
+  drawColor: false,
+  speed: 0,
+  views: [{
+    x: 0,
+    y: 0,
+    w: 640,
+    h: 480,
+    follow: null,
+    bx: 0,
+    by: 0
+  }],
+  rcc: null,
+  layers: [{
+    name: "BoardAreaReferences",
+    type: "Assets",
+    depth: 0,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    sprites: [{
+      spr: "spr_whitepixel",
+      x: 128,
+      y: 64,
+      xs: 384,
+      ys: 256,
+      color: 0,
+      alpha: 0.1255,
+      frame: 0,
+      speed: 1,
+      rot: 0,
+      id: "graphic_62DBDC26_1_1_1"
+    }],
+    instances: []
+  }, {
+    name: "GAMESHOW_Instances",
+    type: "Instances",
+    depth: 100,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    instances: [{
+      obj: "obj_gameshow_swordroute",
+      x: -64,
+      y: 0,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103886,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_solidblocksized",
+      x: 0,
+      y: 377,
+      xs: 16.2,
+      ys: 2.6,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103887,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_solidblocksized",
+      x: 224,
+      y: 222,
+      xs: 8.8,
+      ys: 3.15,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103888,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_solidblocksized",
+      x: -8,
+      y: -10,
+      xs: 4.2,
+      ys: 8.95,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103889,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_solidblocksized",
+      x: 128,
+      y: 0,
+      xs: 13.35,
+      ys: 4.8,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103890,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_solidblocksized",
+      x: 614,
+      y: 192,
+      xs: 1,
+      ys: 3.9,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103891,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_bpush2_stucktrigger",
+      x: 160,
+      y: 64,
+      xs: 22,
+      ys: 17.75,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103892,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_solidblocksized",
+      x: -8,
+      y: 343,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103893,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_treasure_room",
+      x: 176,
+      y: 128,
+      xs: 2,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103894,
+      pre: null,
+      cc: K(function () {
+        this.sprite_index = "spr_board_chest";
+        this.depth = 999980;
+      }, "cc")
+    }, {
+      obj: "obj_doorAny",
+      x: 634,
+      y: 344,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103895,
+      pre: K(function () {
+        this.doorRoom = "room_dw_console_room";
+      }, "pre"),
+      cc: null
+    }]
+  }, {
+    name: "BOARD_Instances",
+    type: "Instances",
+    depth: 900000,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    instances: [{
+      obj: "obj_darkcontroller",
+      x: -32,
+      y: 0,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103896,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_controller",
+      x: -32,
+      y: 96,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103897,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_camera",
+      x: -32,
+      y: 128,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103898,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_mainchara",
+      x: -224,
+      y: 192,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103899,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_mainchara_board",
+      x: 176,
+      y: 288,
+      xs: 2,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103900,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 224,
+      y: 224,
+      xs: 11,
+      ys: 4.28125,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103901,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 160,
+      y: 320,
+      xs: 2,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 11184810,
+      alpha: 1,
+      id: 103902,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 160,
+      y: 0,
+      xs: 15,
+      ys: 6,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103903,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 608,
+      y: 32,
+      xs: 1,
+      ys: 10,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103904,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 0,
+      y: 377,
+      xs: 20,
+      ys: 3.25,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103905,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_solid",
+      x: 0,
+      y: 0,
+      xs: 5,
+      ys: 11,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103906,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_swordroute_event_leavescreen",
+      x: 128,
+      y: 352,
+      xs: 1,
+      ys: 1,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103907,
+      pre: null,
+      cc: null
+    }, {
+      obj: "obj_board_trigger",
+      x: 542,
+      y: 192,
+      xs: 2,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103908,
+      pre: K(function () {
+        this.extflag = "1";
+      }, "pre"),
+      cc: null
+    }, {
+      obj: "obj_board_trigger",
+      x: 576,
+      y: 256,
+      xs: 2,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103909,
+      pre: K(function () {
+        this.extflag = "2";
+      }, "pre"),
+      cc: null
+    }, {
+      obj: "obj_board_trigger",
+      x: 576,
+      y: 371,
+      xs: 2,
+      ys: 0.4,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103910,
+      pre: K(function () {
+        this.extflag = "3";
+      }, "pre"),
+      cc: null
+    }, {
+      obj: "obj_board_trigger",
+      x: 608,
+      y: 351,
+      xs: 2,
+      ys: 1.65,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103911,
+      pre: K(function () {
+        this.extflag = "3";
+      }, "pre"),
+      cc: null
+    }, {
+      obj: "obj_board_npc",
+      x: 176,
+      y: 160,
+      xs: 2,
+      ys: 2,
+      rot: 0,
+      frame: 0,
+      speed: 1,
+      color: 16777215,
+      alpha: 1,
+      id: 103912,
+      pre: null,
+      cc: null
+    }]
+  }, {
+    name: "BOARD_Tiles",
+    type: "Tiles",
+    depth: 1000000,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    tileset: {
+      bg: "bg_board_adventure_tileset",
+      tw: 32,
+      th: 32,
+      bx: 2,
+      by: 2,
+      cols: 30
+    },
+    tilesX: 20,
+    tilesY: 15,
+    data: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 405, 405, 405, 405, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 352, 352, 352, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 352, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 353, 353, 353, 353, 353, 353, 353, 353, 353, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 352, 352, 352, 352, 352, 352, 352, 352, 352, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 353, 352, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 352, 353, 355, 352, 405, 405, 405, 405, 405, 405, 405, 405, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+    instances: []
+  }, {
+    name: "Compatibility_Colour",
+    type: "Background",
+    depth: 2147483600,
+    visible: true,
+    x: 0,
+    y: 0,
+    hs: 0,
+    vs: 0,
+    bg: {
+      spr: null,
+      visible: true,
+      fore: false,
+      htile: false,
+      vtile: false,
+      stretch: false,
+      color: 6710886,
+      alpha: 1,
+      frame: 0,
+      speed: 15
+    },
+    instances: []
+  }]
+};
+ROOM.ginst = [103899, 103896, 103898, 103900, 103886, 103901, 103902, 103903, 103904, 103905, 103906, 103907, 103908, 103897, 103894, 103909, 103910, 103887, 103888, 103889, 103890, 103891, 103892, 103893, 103911, 103912, 103895];
+ROOM.ginst = [103899, 103896, 103898, 103900, 103886, 103901, 103902, 103903, 103904, 103905, 103906, 103907, 103908, 103897, 103894, 103909, 103910, 103887, 103888, 103889, 103890, 103891, 103892, 103893, 103911, 103912, 103895];
+ROOM.ginst = [103899, 103896, 103898, 103900, 103886, 103901, 103902, 103903, 103904, 103905, 103906, 103907, 103908, 103897, 103894, 103909, 103910, 103887, 103888, 103889, 103890, 103891, 103892, 103893, 103911, 103912, 103895];
+ROOM.ginst = [103899, 103896, 103898, 103900, 103886, 103901, 103902, 103903, 103904, 103905, 103906, 103907, 103908, 103897, 103894, 103909, 103910, 103887, 103888, 103889, 103890, 103891, 103892, 103893, 103911, 103912, 103895];
+export { ROOM };
