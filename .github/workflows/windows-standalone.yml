@@ -33,12 +33,41 @@ jobs:
         run: |
           $executable = (Get-ChildItem dist/desktop/*-Windows-Standalone.exe).FullName
           node desktop/test-executable.cjs $executable desktop-smoke-windows.json
+      - name: Check Windows executable icons
+        shell: pwsh
+        run: |
+          Add-Type -AssemblyName System.Drawing
+          $executables = @(
+            (Get-ChildItem dist/desktop/*-Windows-Standalone.exe).FullName,
+            (Get-ChildItem 'dist/desktop/win-unpacked/DELTARUNE Fight Simulator.exe').FullName
+          )
+          for ($i = 0; $i -lt $executables.Count; $i++) {
+            $icon = [System.Drawing.Icon]::ExtractAssociatedIcon($executables[$i])
+            $bitmap = $icon.ToBitmap()
+            $redPixels = 0
+            $otherPixels = 0
+            for ($x = 0; $x -lt $bitmap.Width; $x++) {
+              for ($y = 0; $y -lt $bitmap.Height; $y++) {
+                $pixel = $bitmap.GetPixel($x, $y)
+                if ($pixel.A -gt 128) {
+                  if ($pixel.R -gt 200 -and $pixel.G -lt 30 -and $pixel.B -lt 30) { $redPixels++ }
+                  else { $otherPixels++ }
+                }
+              }
+            }
+            $bitmap.Save("$pwd/desktop-smoke-icon-$i.png", [System.Drawing.Imaging.ImageFormat]::Png)
+            $bitmap.Dispose()
+            $icon.Dispose()
+            if ($redPixels -lt 50 -or $otherPixels -gt 0) { throw "Expected the red heart favicon in $($executables[$i])" }
+          }
       - name: Save test report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: windows-standalone-validation
-          path: desktop-smoke-windows.*
+          path: |
+            desktop-smoke-windows.*
+            desktop-smoke-icon-*.png
           if-no-files-found: warn
       - name: Add executable to the existing release
         env:
@@ -49,4 +78,4 @@ jobs:
           gh release view "$env:RELEASE_TAG" --json tagName,isDraft
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           $executable = (Get-ChildItem dist/desktop/*-Windows-Standalone.exe).FullName
-          gh release upload "$env:RELEASE_TAG" "$executable"
+          gh release upload "$env:RELEASE_TAG" "$executable" --clobber

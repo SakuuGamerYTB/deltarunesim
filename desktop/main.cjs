@@ -41,6 +41,7 @@ else {
       width: 1280, height: 900, minWidth: 640, minHeight: 540,
       title: 'DELTARUNE Fight Simulator', backgroundColor: '#000000', show: true,
       autoHideMenuBar: true,
+      icon: path.join(base, 'site', 'favicon.ico'),
       webPreferences: { nodeIntegration: false, contextIsolation: true, sandbox: true,
         webSecurity: true, backgroundThrottling: false, autoplayPolicy: 'no-user-gesture-required' }
     });

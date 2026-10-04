@@ -50,7 +50,8 @@
         }
       ],
       "artifactName": "DELTARUNE-Simulator-${version}-Windows-Standalone.exe",
-      "signAndEditExecutable": false
+      "icon": "resources/icon.ico",
+      "signExecutable": false
     },
     "portable": {
       "requestExecutionLevel": "user",
