@@ -46,7 +46,14 @@ with tempfile.TemporaryDirectory() as temp:
                 assert response.status == 204
             print('PASS: standalone startup, HTML, readable JS, CSP, HTTP ranges, routes and local telemetry.')
         finally:
-            process.terminate()
+            if sys.platform == 'win32':
+                # A one-file executable starts a child process. Stop the complete
+                # test-owned process tree so Windows releases the log file.
+                subprocess.run(['taskkill', '/PID', str(process.pid), '/T', '/F'],
+                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                               check=process.poll() is None)
+            else:
+                process.terminate()
             try:
                 process.wait(timeout=10)
             except subprocess.TimeoutExpired:
