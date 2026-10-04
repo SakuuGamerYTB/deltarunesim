@@ -4,7 +4,7 @@ A fan-made simulator for practicing DELTARUNE and UNDERTALE battles. Play throug
 
 ## Download
 
-Get the latest version from **[Releases](https://github.com/SakuuGamerYTB/deltarunesim-local/releases/latest)**.
+Get the latest version from **[Releases](https://github.com/SakuuGamerYTB/deltarunesim/releases/latest)**.
 
 | Platform | Download | Launch after extracting |
 | --- | --- | --- |
