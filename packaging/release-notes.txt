@@ -1,6 +1,6 @@
-Offline distribution of upstream 0.9.14, build 2026-10-04T12:05:05.264Z.
+DELTARUNE Fight Simulator 0.9.14 for Windows and macOS.
 
-Download the archive for your computer: macos-arm64 for Apple Silicon, macos-x64 for Intel Macs, or windows-x64 for Windows 64-bit. Extract the entire folder, then launch Launch.command on macOS or DeltaruneSim.exe on Windows. Keep the launcher terminal open while playing.
+Download the archive for your computer: windows-x64 for Windows 64-bit, macos-arm64 for Apple Silicon Macs, or macos-x64 for Intel Macs. Extract the entire folder, then launch Launch.command on macOS or DeltaruneSim.exe on Windows. Keep the launcher terminal open while playing.
 
 Python and the game files are bundled. No additional installation or connection to the original site is required. The launchers are not publisher-signed or notarized; your operating system may display a warning or block them.
 
