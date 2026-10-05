@@ -55,6 +55,5 @@ python3 serve.py --readable --port 8766 --open
 
 - **puskevi**: [original fight simulator](https://deltarunesim.com/).
 - **Toby Fox and the original contributors**: DELTARUNE and UNDERTALE.
-- **SakuuGamerYTB**: offline releases for Windows and macOS.
-
+- 
 All original credits and notices are preserved. Game content and other third-party assets remain the property of their respective owners.
